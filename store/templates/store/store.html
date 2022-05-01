@@ -148,7 +148,7 @@
                     <span class="price">$ {{ product.price }}</span>
                   </div> <!-- price-wrap.// -->
                 </div>
-                <a href="#" class="btn btn-block btn-primary">Add to cart </a>
+                <a href={{ product.get_url }} class="btn btn-block btn-primary">View Details</a>
               </figcaption>
             </figure>
           </div>
@@ -167,10 +167,10 @@
           </ul>
         </nav>
 
-      </main> <!-- col.// -->
+      </main>
 
     </div>
 
-  </div> <!-- container .//  -->
+  </div>
 </section>
 {% endblock content %}
